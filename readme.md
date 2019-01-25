@@ -24,3 +24,5 @@ Começaremos no básico, o que é o Vue.js e como ele funciona, pra só então p
 - Como implantar o aplicativo na Amazon
 
 E tudo isso acompanhado de muitos exercícios, desafios e vários projetos - porque não se trata apenas de ver o código, e sim de como resolver problema reais do mercado!
+
+Link do curso: [VueJS Completo](https://www.udemy.com/vue-js-completo/)
