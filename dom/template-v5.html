@@ -1,0 +1,23 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+  <p v-once>{{ titulo }} - Com o "v-once" o valor é acessado da instância "Vue" apenas uma vez.</p>
+  <p>{{ saudacao() }}</p>
+  <a v-bind:href="link">Google</a>
+</div>
+
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      titulo: 'Usando VueJS!',
+      link: 'http://google.com.br'
+    },
+    methods: {
+      saudacao: function () {
+        this.titulo = 'Bom dia !!!'
+        return this.titulo
+      }
+    }
+  })
+</script>
