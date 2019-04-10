@@ -9,7 +9,11 @@
     <span v-on:mousemove.stop="">PARAR AQUI com modificador de evento!!!</span>
   </p>
   <a v-on:click.prevent="naoNavegar" href="http://google.com">Para o comportamento padrão - Google</a>
+  <hr>
   <a v-on:click="naoNavegar" href="http://google.com">Para o comportamento padrão - Outra Forma - Google</a>
+  <hr>
+  <p>Tecle: ALT + ENTER</p>
+  <input type="text" v-on:keyup.enter.alt="exibirAlerta">
 </div>
 
 <script>
@@ -35,6 +39,9 @@
       },
       naoNavegar (event) {
         event.preventDefault()
+      },
+      exibirAlerta () {
+        alert('Estou te alertando!')
       }
     }
   })
