@@ -1,0 +1,28 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+  <div class="demo"></div>
+  <div class="demo"></div>
+  <div class="demo"></div>
+</div>
+
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      titulo: 'Usando VueJS!'
+    }
+  })
+</script>
+<style>
+  #app {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .demo {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+  }
+</style>
